@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<name>Wales Map</name>
+<open>1</open>
+<Style>
+<ListStyle>
+<listItemType>checkHideChildren</listItemType>
+<bgColor>00ffffff</bgColor>
+<maxSnippetLines>2</maxSnippetLines>
+</ListStyle>
+</Style>
+<Style id="red">
+<IconStyle>
+<Icon>
+<href>http://www.google.com/intl/en_us/mapfiles/ms/icons/red-dot.png</href>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="green">
+<IconStyle>
+<Icon>
+<href>http://www.google.com/intl/en_us/mapfiles/ms/icons/green-dot.png</href>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="blue">
+<IconStyle>
+<Icon>
+<href>http://www.google.com/intl/en_us/mapfiles/ms/icons/blue-dot.png</href>
+</Icon>
+</IconStyle>
+</Style>
+<Style id="yellow">
+<IconStyle>
+<Icon>
+<href>http://www.google.com/intl/en_us/mapfiles/ms/icons/blue-dot.png</href>
+</Icon>
+</IconStyle>
+</Style>
+<Folder>
+<name>Markers</name>
+<Placemark>
+<name>Snowdon</name>
+<description>
+<![CDATA[
+<table><tr><td>Highpoint Of:</td><td>Wales</td></tr><tr><td>Height:</td><td>1,085m (3,560ft)</td></tr><tr><td>Wiki:</td><td><a href="http://en.wikipedia.org/wiki/Snowdon">http://en.wikipedia.org/wiki/Snowdon</a></td></tr><tr><td>SP:</td><td><a href="http://www.summitpost.org/snowdon-yr-wyddfa/150330">http://www.summitpost.org/snowdon-yr-wyddfa/150330</a></td></tr></table>
+]]>
+</description>
+<styleUrl>#blue</styleUrl>
+<Point>
+<coordinates>-4.076231,53.068497,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Pen y Fan</name>
+<description>
+<![CDATA[
+<table><tr><td>Height:</td><td>886m (2,907ft)</td></tr><tr><td>Prominence:</td><td>671m (2,201ft)</td></tr><tr><td>Wiki:</td><td><a href="http://en.wikipedia.org/wiki/Pen_y_Fan">http://en.wikipedia.org/wiki/Pen_y_Fan</a></td></tr></table>
+]]>
+</description>
+<styleUrl>#blue</styleUrl>
+<Point>
+<coordinates>-3.43684,51.88328,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Pumlumon Fawr</name>
+<description>
+<![CDATA[
+<table><tr><td>Height:</td><td>752m (2,467ft)</td></tr><tr><td>Prominence:</td><td>524m (1,719ft)</td></tr><tr><td>Wiki:</td><td><a href="http://en.wikipedia.org/wiki/Plynlimon">http://en.wikipedia.org/wiki/Plynlimon</a></td></tr></table>
+]]>
+</description>
+<styleUrl>#blue</styleUrl>
+<Point>
+<coordinates>-3.7828,52.4675,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Garnedd Ugain</name>
+<description>
+<![CDATA[
+<table><tr><td>Height:</td><td>1,065m (3,494ft)</td></tr><tr><td>Prominence:</td><td>72m (236ft)</td></tr><tr><td>Wiki:</td><td><a href="http://en.wikipedia.org/wiki/Garnedd_Ugain">http://en.wikipedia.org/wiki/Garnedd_Ugain</a></td></tr></table>
+]]>
+</description>
+<styleUrl>#blue</styleUrl>
+<Point>
+<coordinates>-4.07633,53.07499,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Carnedd Llewelyn</name>
+<description>
+<![CDATA[
+<table><tr><td>Height:</td><td>1,064m (3,491ft)</td></tr><tr><td>Prominence:</td><td>750m (2,461ft)</td></tr><tr><td>Wiki:</td><td><a href="http://en.wikipedia.org/wiki/Carnedd_Llewelyn">http://en.wikipedia.org/wiki/Carnedd_Llewelyn</a></td></tr></table>
+]]>
+</description>
+<styleUrl>#blue</styleUrl>
+<Point>
+<coordinates>-3.969305,53.160587,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Carnedd Dafydd</name>
+<description>
+<![CDATA[
+<table><tr><td>Height:</td><td>1,044m (3,425ft)</td></tr><tr><td>Prominence:</td><td>111m (364ft)</td></tr><tr><td>Wiki:</td><td><a href="http://en.wikipedia.org/wiki/Carnedd_Dafydd">http://en.wikipedia.org/wiki/Carnedd_Dafydd</a></td></tr></table>
+]]>
+</description>
+<styleUrl>#blue</styleUrl>
+<Point>
+<coordinates>-4.00205,53.14729,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Glyder Fawr</name>
+<description>
+<![CDATA[
+<table><tr><td>Height:</td><td>1,001m (3,284ft)</td></tr><tr><td>Prominence:</td><td>643m (2,110ft)</td></tr><tr><td>Wiki:</td><td><a href="http://en.wikipedia.org/wiki/Glyder_Fawr">http://en.wikipedia.org/wiki/Glyder_Fawr</a></td></tr></table>
+]]>
+</description>
+<styleUrl>#blue</styleUrl>
+<Point>
+<coordinates>-4.02978,53.10097,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Glyder Fach</name>
+<description>
+<![CDATA[
+<table><tr><td>Height:</td><td>994m (3,261ft)</td></tr><tr><td>Prominence:</td><td>75m (246ft)</td></tr><tr><td>Wiki:</td><td><a href="http://en.wikipedia.org/wiki/Glyder_Fach">http://en.wikipedia.org/wiki/Glyder_Fach</a></td></tr></table>
+]]>
+</description>
+<styleUrl>#blue</styleUrl>
+<Point>
+<coordinates>-4.00905,53.10491,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Pen yr Ole Wen</name>
+<description>
+<![CDATA[
+<table><tr><td>Height:</td><td>978m (3,209ft)</td></tr><tr><td>Prominence:</td><td>45m (148ft)</td></tr><tr><td>Wiki:</td><td><a href="http://en.wikipedia.org/wiki/Pen_yr_Ole_Wen">http://en.wikipedia.org/wiki/Pen_yr_Ole_Wen</a></td></tr></table>
+]]>
+</description>
+<styleUrl>#blue</styleUrl>
+<Point>
+<coordinates>-4.01205,53.13723,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Foel Grach</name>
+<description>
+<![CDATA[
+<table><tr><td>Height:</td><td>976m (3,202ft)</td></tr><tr><td>Prominence:</td><td>40m (131ft)</td></tr><tr><td>Wiki:</td><td><a href="http://en.wikipedia.org/wiki/Foel_Grach">http://en.wikipedia.org/wiki/Foel_Grach</a></td></tr></table>
+]]>
+</description>
+<styleUrl>#blue</styleUrl>
+<Point>
+<coordinates>-3.963333,53.174167,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Yr Elen</name>
+<description>
+<![CDATA[
+<table><tr><td>Height:</td><td>962m (3,156ft)</td></tr><tr><td>Prominence:</td><td>62m (203ft)</td></tr><tr><td>Wiki:</td><td><a href="http://en.wikipedia.org/wiki/Yr_Elen">http://en.wikipedia.org/wiki/Yr_Elen</a></td></tr></table>
+]]>
+</description>
+<styleUrl>#blue</styleUrl>
+<Point>
+<coordinates>-3.98649,53.16643,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Y Garn</name>
+<description>
+<![CDATA[
+<table><tr><td>Height:</td><td>947m (3,107ft)</td></tr><tr><td>Prominence:</td><td>236m (774ft)</td></tr><tr><td>Wiki:</td><td><a href="http://en.wikipedia.org/wiki/Y_Garn_(Glyderau)">http://en.wikipedia.org/wiki/Y_Garn_(Glyderau)</a></td></tr></table>
+]]>
+</description>
+<styleUrl>#blue</styleUrl>
+<Point>
+<coordinates>-4.04837,53.11503,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Crib Goch</name>
+<description>
+<![CDATA[
+<table><tr><td>Height:</td><td>923m (3,028ft)</td></tr><tr><td>Prominence:</td><td>65m (213ft)</td></tr><tr><td>Wiki:</td><td><a href="http://en.wikipedia.org/wiki/Crib_Goch">http://en.wikipedia.org/wiki/Crib_Goch</a></td></tr></table>
+]]>
+</description>
+<styleUrl>#blue</styleUrl>
+<Point>
+<coordinates>-4.053513,53.075542,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder>
+<name>Shapes</name>
+<Placemark>
+<name>Wales</name>
+<description>
+<![CDATA[
+<table><tr><td>Highpoint:</td><td>Snowdon</td></tr><tr><td>Height:</td><td>1,085m (3,560ft)</td></tr><tr><td>Wiki:</td><td><a href="http://en.wikipedia.org/wiki/Snowdon">http://en.wikipedia.org/wiki/Snowdon</a></td></tr><tr><td>SP:</td><td><a href="http://www.summitpost.org/snowdon-yr-wyddfa/150330">http://www.summitpost.org/snowdon-yr-wyddfa/150330</a></td></tr></table>
+]]>
+</description>
+<Style>
+<LineStyle>
+<width>0.5</width>
+<color>CCFF0000</color>
+</LineStyle>
+<PolyStyle>
+<color>BB00A5FF</color>
+<colorMode>random</colorMode>
+</PolyStyle>
+</Style>
+<MultiGeometry>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+-4.4022,53.1258,0 -4.3853,53.1828,0 -4.4908,53.1750,0 -4.5728,53.3197,0 -4.5672,53.3914,0 -4.4164,53.4250,0 -4.2928,53.4075,0 -4.2042,53.2919,0 -4.0533,53.3047,0 -4.0900,53.2550,0 -4.4022,53.1258,0 
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+-2.6590,51.6197,0 -2.6882,51.7300,0 -2.6608,51.8337,0 -2.7397,51.8371,0 -2.8812,51.9350,0 -2.9711,51.9040,0 -3.1002,52.0225,0 -3.1366,52.1331,0 -3.0741,52.2345,0 -3.0137,52.2627,0 -3.0020,52.3324,0 -3.2369,52.4380,0 -3.1957,52.4761,0 -3.0343,52.5024,0 -3.0061,52.5730,0 -3.1366,52.5288,0 -2.9924,52.7396,0 -3.1641,52.8007,0 -3.1476,52.8799,0 -2.9766,52.9689,0 -2.7329,52.9246,0 -2.7301,52.9826,0 -2.8359,52.9983,0 -2.8963,53.0940,0 -2.9945,53.1542,0 -2.9182,53.1863,0 -3.0315,53.2504,0 -3.1098,53.2701,0 -3.0875,53.2303,0 -3.3153,53.3467,0 -3.3761,53.3450,0 -3.6133,53.2791,0 -3.8775,53.3311,0 -3.8339,53.2825,0 -4.1967,53.2061,0 -4.3731,53.0222,0 -4.6150,52.9164,0 -4.7619,52.7887,0 -4.5919,52.8153,0 -4.5253,52.7789,0 -4.4931,52.7964,0 -4.5006,52.8294,0 -4.3950,52.8905,0 -4.0656,52.9155,0 -4.1483,52.7983,0 -4.0983,52.7561,0 -3.9892,52.7317,0 -4.0594,52.6997,0 -4.1264,52.6017,0 -4.0556,52.5408,0 -3.9747,52.5511,0 -3.9667,52.5364,0 -4.0575,52.5239,0 -4.0614,52.4767,0 -4.1503,52.3153,0 -4.4414,52.1647,0 -4.7228,52.1130,0 -4.8378,52.0141,0 -5.0764,52.0216,0 -5.0769,51.9961,0 -5.2289,51.9236,0 -5.3094,51.8617,0 -5.2525,51.8697,0 -5.1200,51.8455,0 -5.1044,51.7708,0 -5.2128,51.7311,0 -4.9672,51.7016,0 -4.8861,51.7511,0 -4.8439,51.7069,0 -5.1158,51.6733,0 -4.9939,51.6067,0 -4.8567,51.6419,0 -4.7833,51.6319,0 -4.6908,51.6875,0 -4.6342,51.7278,0 -4.3633,51.7830,0 -4.3561,51.7353,0 -4.0781,51.6461,0 -4.2428,51.6378,0 -4.2953,51.5569,0 -4.2117,51.5317,0 -4.1119,51.5650,0 -4.0172,51.5522,0 -3.9961,51.5969,0 -3.9358,51.6125,0 -3.8256,51.5958,0 -3.5428,51.3978,0 -3.3342,51.3797,0 -3.1642,51.4097,0 -3.1644,51.4547,0 -3.0414,51.5203,0 -2.8869,51.5392,0 -2.7067,51.5850,0 
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document>
+</kml>

@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Summits.master.cs" Inherits="HavocNet.Web.Summits.Summits" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="height:100%">
+<head runat="server">
+    <title>HavocNet - Summits</title>
+    <link rel="SHORTCUT ICON" href="..\App_Themes\HavocNet\Images\favicon.ico" />
+</head>
+<body id="body">
+    <form runat="server" style="height:100%; overflow: hidden">
+        <div class="fullWidthHeader">
+            <div class="centralHeader">
+                <div class="titleHeader">
+                    <a href="/Login.aspx"><h1>Summits</h1></a>
+                </div>
+                <div class="titleHeader">
+                    <div style="margin-top:11px; padding-left:5px">
+                        Welcome <asp:Label runat="server" ID="lblUser"></asp:Label>
+                    </div>
+                    <div>
+                        <ul class="miniMenu">
+                            <li runat="server" id="cmdAccount" visible="false">
+                                <asp:HyperLink NavigateUrl="/Summits/Preferences.aspx" runat="server">preferences</asp:HyperLink>
+                            </li>
+                            <li runat="server" id="cmdLogout" visible="false">
+                                <asp:HyperLink NavigateUrl="/Summits/Logout.aspx" runat="server">logout</asp:HyperLink>
+                            </li>
+                            <li runat="server" id="cmdLogin" visible="false">
+                                <asp:HyperLink NavigateUrl="/Summits/Login.aspx" runat="server">login</asp:HyperLink>
+                            </li>
+                            <li runat="server" id="cmdSignUp" visible="false">
+                                <asp:HyperLink NavigateUrl="/Summits/SignUp.aspx" runat="server">sign up</asp:HyperLink>
+                            </li>
+                            <li runat="server" id="cmdBrowse">
+                                <asp:HyperLink NavigateUrl="/Summits/Browse.aspx" runat="server">browse</asp:HyperLink>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="titleHeader" style="float:right">
+                    <ul class="navMenu" id="navMenu" runat="server">
+                        <li runat="server" id="cmdMainCountries" visible="false">
+                            <asp:HyperLink NavigateUrl="MainCountries.aspx" runat="server">Country</asp:HyperLink>
+                        </li>
+                        <li runat="server" id="cmdMainCounties" visible="false">
+                            <asp:HyperLink NavigateUrl="MainCounties.aspx" runat="server">County</asp:HyperLink>
+                        </li>
+                        <li runat="server" id="cmdMainMountains" visible="false">
+                            <asp:HyperLink NavigateUrl="MainMountains.aspx" runat="server">Mountain</asp:HyperLink>
+                        </li>
+                        <li runat="server" id="cmdMainTrips" visible="false">
+                            <asp:HyperLink NavigateUrl="MainTrips.aspx" runat="server">Trip</asp:HyperLink>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fullWidthContent" style="height: 100%; overflow: hidden">
+            <asp:ContentPlaceHolder ID="cphMain" runat="server"></asp:ContentPlaceHolder>   
+        </div>
+    </form>
+</body>
+</html>

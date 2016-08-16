@@ -1,0 +1,186 @@
+﻿/********************************************************************************/
+/* Controls */
+/********************************************************************************/
+
+/* Buttons */
+
+a.MyButton
+{
+    background-color: lightblue; 
+    border: 1px solid Gray;
+    display: inline;
+    font: normal 11px Arial;
+    padding: 3px 3px 2px 3px;
+    text-align:center;
+    text-decoration: none;
+    color: black;
+}
+
+a.MyButton:hover
+{
+    background-color: PaleGoldenrod;
+    color: black;
+    text-decoration: none;
+}
+
+/* Textboxes */
+.fullWidth {
+    font: normal 11px tahoma,Arial, Helvetica, sans-serif;
+    width: 100%;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.halfWidth {
+    width: 50%;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.CommentBox{
+    font: normal 11px tahoma,Arial, Helvetica, sans-serif;
+}
+
+.ClearTextbox
+{
+    border:none 0 white;
+    color:Maroon;
+    font-size:14px;
+    margin:5px;
+}
+
+/* Checkboxes */
+
+.FSMCheckbox label {
+    vertical-align: middle;
+    position: relative;
+    bottom: 3px;
+}
+
+/* Dropdowns */
+
+.MyDropdown {
+    margin-left: 3px;
+}
+
+
+/* Radio Buttons */
+
+
+
+/* Table Cells */
+
+.JobTableTitle{
+    font-weight:bold;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.JobTableTitle2{
+    font-weight:bold;
+    padding-bottom: 5px;
+}
+
+.JobTableCell{
+    padding:0;
+}
+
+/* Tree Items */
+
+.ttHead{
+    border-bottom:solid 1px gray;
+    margin: 0;
+    padding: 0;
+    table-layout:fixed;
+    width:100%;
+    height: 25px;
+}
+
+.tt{
+    border-bottom:solid 1px lightgray;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.tt2{
+    border-bottom:solid 1px lightgray;
+    margin: 0;
+    padding: 0;
+    table-layout:fixed;
+    width:882px;
+}
+
+.ttSmall{
+    border-bottom:solid 1px gray;
+    margin: 0;
+    padding: 0;
+    table-layout:fixed;
+    width:400px;
+}
+
+.ttSmall2{
+    border-bottom:solid 1px gray;
+    margin: 0;
+    padding: 0;
+    table-layout:fixed;
+    width:382px;
+}
+
+/* List */
+
+ul.MenuList
+{
+    list-style: none;
+    margin:  0 0 0 0;
+    padding: 0 0 0 0;
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
+    background-color: aliceblue;
+}
+
+ul.MenuList a
+{
+    color: black;
+    display: block; 
+    font-size:11px;
+    padding: 4px 4px 4px 8px;
+    text-decoration: none;
+    border-top: solid 1px black;
+    border-right: solid 1px black;
+}
+
+ul.MenuList a.top {
+    border-top: 0;
+}
+
+ul.MenuList a:hover
+{
+    background-color: white;
+}
+
+ul.MenuList a.on
+{
+    background-color: white;
+    font-weight: bold;
+    border-right: solid 1px black;
+}
+
+ul.MenuList a.onred
+{
+    background-color: white;
+    font-weight: bold;
+    border-right: solid 1px black;
+    color: red;
+}
+
+ul.MenuList a.red
+{
+    color: red;
+}

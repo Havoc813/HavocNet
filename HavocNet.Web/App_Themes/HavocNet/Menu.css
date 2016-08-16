@@ -1,0 +1,131 @@
+﻿/********************************************************************************/
+/* Menus */
+/********************************************************************************/
+
+.menuContainer {
+    background-color: black;
+    padding: 0;
+}
+
+.menuContainerOff {
+    background-color: white;
+    padding: 0;
+}
+
+.menu {
+    margin: 10px 0 15px 0;
+    width: 163px;
+    padding: 0;
+}
+
+.menuCell, .menuCellOn {
+    border-bottom: solid 2px black;
+    margin: 0;
+    width: 163px;
+    color: white;
+    list-style: none;
+}
+
+.menuCell a, .menuCellOn a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 7px 10px 7px 10px;
+    font: normal 12px tahoma, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.menuCell a {
+    background-color: white;
+}
+
+.menuCellOn a {
+    background-color: lightblue;
+}
+
+.menuCell a .description, .menuCellOn a .description {
+    font: normal 10px tahoma,Arial, Helvetica, sans-serif;
+}
+
+.menuCell a:hover 
+{
+    text-decoration: none;
+    color: black;
+    background-color: lightblue;
+}
+
+.menuCellArrow {
+    background-color: white;
+    text-align: center;
+    border-bottom: solid 2px black;
+    background-repeat: no-repeat;
+    background-position: center;
+    list-style: none;
+    height: 15px;
+}
+
+.menuCellArrow.Up {
+    background-image: url('../HavocNet/Images/ListUp.gif');
+}
+.menuCellArrow.Down {
+    background-image: url('../HavocNet/Images/ListDown.gif');
+}
+
+.menuCellArrow:hover {
+    background-color: lightblue;
+}
+
+.statsCell {
+    border-bottom: solid 17px black;
+    margin: 0;
+    color: black;
+    background-color: white;
+    display: block;
+}
+
+.statsText {
+    padding: 7px 10px 0px 10px;
+    font: normal 11px Tahoma, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+/********************************************************************************/
+/* Sub Menus */
+/********************************************************************************/
+
+.subMenuCell, .subMenuCellOn 
+{
+    border-bottom: solid 2px black;
+    margin: 0;
+    width: 163px;
+    color: white;
+    list-style: none;
+}
+
+.subMenuCell a, .subMenuCellOn a 
+{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 7px 10px 7px 10px;
+    font: normal 11px Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.subMenuCell a 
+{
+    background-color: white;
+}
+
+.subMenuCellOn a 
+{
+    background-color:lightblue;
+}
+
+.subMenuCell a:hover 
+{
+    text-decoration: none;
+    color: black;
+    background-color: lightblue;
+}

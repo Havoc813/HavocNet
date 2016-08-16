@@ -1,0 +1,18 @@
+﻿.sudokuTextBox {
+    border: none;
+    width: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.sudokuCell {
+    border: solid 1px black;
+    height: 30px;
+}
+
+.polyRadio {
+    margin: 0 0 0 4px;
+    padding: 0;
+}

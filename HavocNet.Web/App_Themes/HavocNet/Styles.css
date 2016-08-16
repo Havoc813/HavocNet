@@ -1,0 +1,46 @@
+/********************************************************************************/
+/* Default Styles */
+/********************************************************************************/
+body
+{
+    background-color: white;
+    font: normal 12px tahoma,Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+input
+{
+    font:11px tahoma;
+}
+
+select
+{
+    font:11px tahoma;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.content
+{
+    margin: auto;
+    height: 100%;
+    max-width: 1238px;
+}
+
+.fullWidthContent {
+    margin: auto;
+    height: 100%;
+}
+
+.contentPage {
+
+    width: 100%;
+    font: normal 11px Tahoma, Helvetica, sans-serif;
+    vertical-align: top;
+    padding: 10px;
+}

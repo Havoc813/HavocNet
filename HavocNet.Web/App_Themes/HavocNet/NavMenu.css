@@ -1,0 +1,138 @@
+﻿/********************************************************************************/
+/* Header Styles */
+/********************************************************************************/
+
+.fullWidthHeader {
+    width: 100%;
+    background-color: black;
+    height: 54px;
+}
+
+.centralHeader {
+    max-width: 1238px;
+    margin: auto;
+    background-color: black;
+    height: 54px;
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+}
+
+.titleHeader
+{
+    float: left;
+    background-color: black;    
+}
+
+.titleHeader a {
+    text-decoration: none;
+}
+
+.titleHeader h1 {
+    font: normal 20px tahoma,Arial, Helvetica, sans-serif;
+    background: url(Images/logo.png) black no-repeat 5px 4px;
+    margin: 0;
+    width: 103px;
+    text-align: left;
+    padding: 14px 0 0 60px;
+    height: 40px;
+    color: white;
+    border-right: solid 2px white;
+}
+
+.titleHeader div {
+    color: white;
+    font: normal 11px tahoma,Arial, Helvetica, sans-serif;
+    margin: 4px 0 0 3px;
+}
+
+/********************************************************************************/
+/* Main Navigation Menu */
+/********************************************************************************/
+
+ul.navMenu
+{
+    display: block;
+    margin: 9px 0 4px 20px;
+    padding: 0; 
+    height: 41px;
+}
+ul.navMenu li
+{
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0;
+}
+ul.navMenu a
+{
+    background: black;
+    border-left: 2px solid white;
+    color: White;
+    display: block;
+    font: normal 11px tahoma,Arial, Helvetica, sans-serif;
+    height: 30px;
+    padding: 5px 0 0 3px;
+    text-decoration: none;
+    width: 90px;
+    font-weight: bold;
+}
+ul.navMenu a:hover
+{
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+ul.navMenu a.on
+{
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/********************************************************************************/
+/* Mini Navigation Menu */
+/********************************************************************************/
+
+ul.miniMenu
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+ul.miniMenu li
+{
+    display: block;
+    float: left;
+    color: white;
+    margin: 0;
+}
+
+ul.miniMenu a
+{
+    background: black;
+    color: White;
+    display: block;
+    font: normal 11px tahoma,Arial, Helvetica, sans-serif;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    height: 14px;
+}
+
+ul.miniMenu a:hover
+{
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+ul.miniMenu a.on
+{
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}

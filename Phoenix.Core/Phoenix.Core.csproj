@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7321F538-0C02-4B3F-BE2D-34A1C56503B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Phoenix.Core</RootNamespace>
+    <AssemblyName>Phoenix.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.ORAOLEDBLib">
+      <HintPath>..\References\Interop.ORAOLEDBLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CoreResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoreResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Email\EmailBody.cs" />
+    <Compile Include="Enums\AccessType.cs" />
+    <Compile Include="Enums\SchedulerSubscriptionParameterType.cs" />
+    <Compile Include="Enums\ServiceState.cs" />
+    <Compile Include="FSCalendarHelper.cs" />
+    <Compile Include="FSColor.cs" />
+    <Compile Include="FSDateDisplay.cs" />
+    <Compile Include="FSDateHelper.cs" />
+    <Compile Include="FSEncrypt.cs" />
+    <Compile Include="FSExcelAceHelper.cs" />
+    <Compile Include="FSFiscalDateHelper.cs" />
+    <Compile Include="FSFormat.cs" />
+    <Compile Include="FSGuid.cs" />
+    <Compile Include="FSMenu.cs" />
+    <Compile Include="FSOracleServer.cs" />
+    <Compile Include="FSScript.cs" />
+    <Compile Include="FSServer.cs" />
+    <Compile Include="FSTimeHelper.cs" />
+    <Compile Include="FSUserSetting.cs" />
+    <Compile Include="Logging\FSAudit.cs" />
+    <Compile Include="FSConfig.cs" />
+    <Compile Include="Logging\FSError.cs" />
+    <Compile Include="FSIdentity.cs" />
+    <Compile Include="Logging\FSLog.cs" />
+    <Compile Include="FSEmail.cs" />
+    <Compile Include="FSTable.cs" />
+    <Compile Include="FSUser.cs" />
+    <Compile Include="IFSIdentity.cs" />
+    <Compile Include="Logging\FSLogException.cs" />
+    <Compile Include="Logging\FSLogMessage.cs" />
+    <Compile Include="Logging\FSLogPath.cs" />
+    <Compile Include="Logging\FSLogServiceEvent.cs" />
+    <Compile Include="Logging\WebLog.cs" />
+    <Compile Include="MAXL.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\DistributionList.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\EmployeeContractType.cs" />
+    <Compile Include="Models\EmployeeCostCentre.cs" />
+    <Compile Include="Models\Holidays.cs" />
+    <Compile Include="Models\IDistributionList.cs" />
+    <Compile Include="Models\IEmployee.cs" />
+    <Compile Include="Models\IEmployeeCostCentre.cs" />
+    <Compile Include="Models\IHolidays.cs" />
+    <Compile Include="Models\IPerson.cs" />
+    <Compile Include="Models\ISchedulerReport.cs" />
+    <Compile Include="Models\ISchedulerSubscription.cs" />
+    <Compile Include="Models\ISchedulerSubscriptionParameter.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\SchedulerDistributionItem.cs" />
+    <Compile Include="Models\SchedulerDistributionList.cs" />
+    <Compile Include="Models\SchedulerReport.cs" />
+    <Compile Include="Models\SchedulerSubscription.cs" />
+    <Compile Include="Models\SchedulerSubscriptionParameter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FSStringHelper.cs" />
+    <Compile Include="Repositories\DatabaseDistributionListRepository.cs" />
+    <Compile Include="Repositories\DatabaseEmployeeRepository.cs" />
+    <Compile Include="Repositories\DatabasePersonRepository.cs" />
+    <Compile Include="Repositories\EmployeeCostCentreRepository.cs" />
+    <Compile Include="Repositories\HolidayRepository.cs" />
+    <Compile Include="Repositories\IDatabaseDistributionListRepository.cs" />
+    <Compile Include="Repositories\IEmployeeCostCentreRepository.cs" />
+    <Compile Include="Repositories\IEmployeeRepository.cs" />
+    <Compile Include="Repositories\IHolidayRepository.cs" />
+    <Compile Include="Repositories\SchedulerReportRepository.cs" />
+    <Compile Include="Repositories\SchedulerSubscriptionParameterRepository.cs" />
+    <Compile Include="Repositories\SchedulerSubscriptionRepository.cs" />
+    <Compile Include="Servers\CoreServer.cs" />
+    <Compile Include="SSIS.cs" />
+    <Compile Include="TableManagePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tables\FSAlignment.cs" />
+    <Compile Include="Tables\FSColumn.cs" />
+    <Compile Include="Tables\FSDataTable.cs" />
+    <Compile Include="Tables\FSTableColumns.cs" />
+    <Compile Include="Tables\TableControls.cs" />
+    <Compile Include="Templates\CoreTemplates.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoreTemplates.resx</DependentUpon>
+    </Compile>
+    <Compile Include="URLHelper.cs" />
+    <Compile Include="WebFormat.cs" />
+    <Compile Include="Workbook.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CoreResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CoreResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\CoreTemplates.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CoreTemplates.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\FirstRandLogo_SmallWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Templates\EmailTemplate.html" />
+    <Content Include="Templates\ErrorTemplate.html" />
+    <Content Include="Templates\GenericTemplate.html" />
+    <Content Include="Templates\NoAccessTemplate.html" />
+    <Content Include="Templates\ReportTemplate.html" />
+    <Content Include="Templates\ServiceTemplate.html" />
+    <Content Include="Templates\WelcomeTemplate.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

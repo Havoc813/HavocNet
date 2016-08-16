@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Regatta.master.cs" Inherits="HavocNet.Web.Regatta.Regatta" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>HavocNet - Regatta</title>
+    <link rel="SHORTCUT ICON" href="..\App_Themes\HavocNet\Images\favicon.ico" />
+</head>
+<body id="body">
+    <form runat="server">
+        <div class="fullWidthHeader">
+            <div class="centralHeader">
+                <div class="titleHeader">
+                    <a href="/Login.aspx"><h1>Regatta</h1></a>
+                </div>
+                <div class="titleHeader">
+                    <div style="margin-top:11px; padding-left:5px">
+                        Welcome <asp:Label runat="server" ID="lblUser"></asp:Label>
+                    </div>
+                    <div>
+                        <ul class="miniMenu">
+                            <li runat="server" id="cmdAccount" visible="false">
+                                <asp:HyperLink NavigateUrl="/Regatta/Preferences.aspx" runat="server">preferences</asp:HyperLink>
+                            </li>
+                            <li runat="server" id="cmdLogout" visible="false">
+                                <asp:HyperLink NavigateUrl="/Regatta/Logout.aspx" runat="server">logout</asp:HyperLink>
+                            </li>
+                            <li runat="server" id="cmdLogin" visible="false">
+                                <asp:HyperLink NavigateUrl="/Regatta/Login.aspx" runat="server">login</asp:HyperLink>
+                            </li>
+                            <li runat="server" id="cmdSignUp" visible="false">
+                                <asp:HyperLink NavigateUrl="/Regatta/SignUp.aspx" runat="server">sign up</asp:HyperLink>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="titleHeader" style="float:right">
+                    <ul class="navMenu" id="navMenu" runat="server">
+                        <li runat="server" id="cmdMainEvents" visible="false">
+                            <asp:HyperLink NavigateUrl="MainEvents.aspx" runat="server">Events</asp:HyperLink>
+                        </li>
+                        <li runat="server" id="cmdMainSeries" visible="false">
+                            <asp:HyperLink NavigateUrl="MainSeries.aspx" runat="server">Series</asp:HyperLink>
+                        </li>
+                        <li runat="server" id="cmdMainMaintain" visible="false">
+                            <asp:HyperLink NavigateUrl="MainMaintain.aspx" runat="server">Maintain</asp:HyperLink>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <table style="table-layout: fixed;">
+                <tr>
+                    <td style="padding:0; vertical-align: top">
+                        <table style="background-color: white">
+                            <tr>
+                                <td runat="server" class="menuContainerOff" id="tblMenu">
+                                    <div>
+                                        <ul class="menu" id="menu" runat="server">
+                                            <asp:PlaceHolder runat="server" ID="phMenu"></asp:PlaceHolder>    
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="menu" id="subMenu" runat="server">
+                                            <asp:PlaceHolder runat="server" ID="phSubMenu"></asp:PlaceHolder>
+                                        </ul>
+                                    </div>   
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="contentPage">
+                        <asp:ContentPlaceHolder ID="cphMain" runat="server"></asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>            
+        </div>
+    </form>
+</body>
+</html>
