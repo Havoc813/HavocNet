@@ -1,6 +1,5 @@
 ﻿var selectedMenu = 'World';
 var selectedSubMenu = 'Highpointed';
-var user = 'Demo';
 var pageType = 'Countries';
 
 function InitMenu(map, type) {

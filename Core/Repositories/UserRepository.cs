@@ -86,7 +86,8 @@ namespace Core.Repositories
                     false,
                     "Home.aspx",
                     false,
-                    true
+                    true,
+                    0
                 );
 
             _aServer.Open();
@@ -275,7 +276,8 @@ namespace Core.Repositories
                 int.Parse(aReader["Admin"].ToString()) == 1,
                 aReader["HomePage"].ToString(),
                 int.Parse(aReader["ChangePassword"].ToString()) == 1,
-                int.Parse(aReader["AllowEmail"].ToString()) == 1
+                int.Parse(aReader["AllowEmail"].ToString()) == 1,
+                int.Parse(aReader["Version"].ToString())
                 );
         }
 

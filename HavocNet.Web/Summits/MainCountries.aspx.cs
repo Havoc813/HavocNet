@@ -29,7 +29,7 @@ namespace HavocNet.Web.Summits
             var stats = repo.GetAllCountry(server);
 
             this.data.InnerHtml = JsonConvert.SerializeObject(stats);
-
+            
             server.Close();
         }
     }

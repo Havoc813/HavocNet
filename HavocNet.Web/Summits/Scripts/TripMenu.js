@@ -1,8 +1,6 @@
 ﻿var selectedMenu;
 var selectedSubMenu;
-var user = 'Demo';
 var currentLayer;
-var version = '501';
 var cursor = 5;
 var menuTrips = [];
 

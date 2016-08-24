@@ -59,6 +59,8 @@
         <div class="fullWidthContent" style="height: 100%; overflow: hidden">
             <asp:ContentPlaceHolder ID="cphMain" runat="server"></asp:ContentPlaceHolder>   
         </div>
+        <asp:HiddenField runat="server" ID="hidVersion"/>
+        <asp:HiddenField runat="server" ID="hidUserID"/>
     </form>
 </body>
 </html>

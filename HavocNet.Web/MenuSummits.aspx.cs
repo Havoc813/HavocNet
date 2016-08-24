@@ -14,8 +14,12 @@ namespace HavocNet.Web
             if (_myMaster == null) return;
             _myMaster.LoadPage("MainAdministration");
 
-            this.hidSelectedRow.Value = "";
-            this.hidEditingRow.Value = "";
+            LoadPage();
+        }
+
+        private void LoadPage()
+        {
+            
         }
     }
 }

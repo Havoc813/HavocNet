@@ -79,7 +79,7 @@ namespace Summits.Administration
                 arr.Add("<innerBoundaryIs>");
                 arr.Add("<LinearRing>");
                 arr.Add("<coordinates>");
-                arr.Add(cutOut);
+                arr.Add(cutOut.Value);
                 arr.Add("</coordinates>");
                 arr.Add("</LinearRing>");
                 arr.Add("</innerBoundaryIs>");

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Web.UI.WebControls;
 
 namespace Core
 {
@@ -15,9 +16,10 @@ namespace Core
         private readonly string _homePage;
         private readonly bool _changePassword;
         private readonly bool _allowEmail;
+        private readonly int _version;
 
         public readonly Dictionary<string, int> PageAccess = new Dictionary<string, int>();
-
+        
         public User(
             int id, 
             string username, 
@@ -29,7 +31,8 @@ namespace Core
             bool admin, 
             string homePage, 
             bool changePassword,
-            bool allowEmail
+            bool allowEmail,
+            int version
             )
         {
             _id = id;
@@ -44,6 +47,7 @@ namespace Core
             _changePassword = changePassword;
             _allowEmail = allowEmail;
             _password = password;
+            _version = version;
         }
 
         public string Username
@@ -99,6 +103,11 @@ namespace Core
         public bool AllowEmail
         {
             get { return _allowEmail; }
+        }
+
+        public int Version
+        {
+            get { return _version; }
         }
 
         public int GetAcccess(string pageIdentifier)

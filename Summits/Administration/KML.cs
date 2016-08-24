@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Summits.Administration
 {
@@ -19,6 +16,9 @@ namespace Summits.Administration
 
         public void Generate(string path)
         {
+            var dir = new System.IO.DirectoryInfo(path);
+            if (!dir.Parent.Exists) dir.Parent.Create(); 
+
             var file = new System.IO.StreamWriter(path);
 
             try
@@ -40,7 +40,8 @@ namespace Summits.Administration
                 file.WriteLine("<Style id='red'>");
                 file.WriteLine("<IconStyle>");
                 file.WriteLine("<Icon>");
-                file.WriteLine("<href>http://www.google.com/intl/en_us/mapfiles/ms/icons/red-dot.png</href>");
+                //file.WriteLine("<href>http://www.google.com/intl/en_us/mapfiles/ms/icons/red-dot.png</href>");
+                file.WriteLine("<href>http://labs.google.com/ridefinder/images/mm_20_red.png</href>");
                 file.WriteLine("</Icon>");
                 file.WriteLine("</IconStyle>");
                 file.WriteLine("</Style>");
@@ -48,7 +49,8 @@ namespace Summits.Administration
                 file.WriteLine("<Style id='green'>");
                 file.WriteLine("<IconStyle>");
                 file.WriteLine("<Icon>");
-                file.WriteLine("<href>http://www.google.com/intl/en_us/mapfiles/ms/icons/green-dot.png</href>");
+                //file.WriteLine("<href>http://www.google.com/intl/en_us/mapfiles/ms/icons/green-dot.png</href>");
+                file.WriteLine("<href>http://labs.google.com/ridefinder/images/mm_20_green.png</href>");
                 file.WriteLine("</Icon>");
                 file.WriteLine("</IconStyle>");
                 file.WriteLine("</Style>");
@@ -56,7 +58,8 @@ namespace Summits.Administration
                 file.WriteLine("<Style id='blue'>");
                 file.WriteLine("<IconStyle>");
                 file.WriteLine("<Icon>");
-                file.WriteLine("<href>http://www.google.com/intl/en_us/mapfiles/ms/icons/blue-dot.png</href>");
+                //file.WriteLine("<href>http://www.google.com/intl/en_us/mapfiles/ms/icons/blue-dot.png</href>");
+                file.WriteLine("<href>http://labs.google.com/ridefinder/images/mm_20_blue.png</href>");
                 file.WriteLine("</Icon>");
                 file.WriteLine("</IconStyle>");
                 file.WriteLine("</Style>");
@@ -64,7 +67,17 @@ namespace Summits.Administration
                 file.WriteLine("<Style id='yellow'>");
                 file.WriteLine("<IconStyle>");
                 file.WriteLine("<Icon>");
-                file.WriteLine("<href>http://www.google.com/intl/en_us/mapfiles/ms/icons/blue-dot.png</href>");
+                //file.WriteLine("<href>http://www.google.com/intl/en_us/mapfiles/ms/icons/yellow-dot.png</href>");
+                file.WriteLine("<href>http://labs.google.com/ridefinder/images/mm_20_yellow.png</href>");
+                file.WriteLine("</Icon>");
+                file.WriteLine("</IconStyle>");
+                file.WriteLine("</Style>");
+
+                file.WriteLine("<Style id='orange'>");
+                file.WriteLine("<IconStyle>");
+                file.WriteLine("<Icon>");
+                //file.WriteLine("<href>http://www.google.com/intl/en_us/mapfiles/ms/icons/orange-dot.png</href>");
+                file.WriteLine("<href>http://labs.google.com/ridefinder/images/mm_20_orange.png</href>");
                 file.WriteLine("</Icon>");
                 file.WriteLine("</IconStyle>");
                 file.WriteLine("</Style>");

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Linq;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
@@ -43,6 +44,9 @@ namespace HavocNet.Web.Summits
             aRepository = new MenuItemRepository(aServer, aUser);
 
             BindNavMenu(navMenuName);
+
+            SetVersion();
+            SetUserID();
         }
 
         private void BindButtons()
@@ -64,7 +68,14 @@ namespace HavocNet.Web.Summits
             }
         }
 
+        public void SetVersion()
+        {
+            this.hidVersion.Value = aUser.Version.ToString(CultureInfo.InvariantCulture);
+        }
 
-
+        public void SetUserID()
+        {
+            this.hidUserID.Value = aUser.ID.ToString(CultureInfo.InvariantCulture);
+        }
     }
 }
