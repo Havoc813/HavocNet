@@ -45,8 +45,8 @@ function SetMapSubMenu(name, map) {
     var layerName = pageType;
     if (pageType == 'Counties') layerName = selectedMenu.replace(" ","");
 
-    //var layer = new google.maps.KmlLayer('http://havocnet.wreakhavoc.co.uk/Summits/KML/' + document.getElementById('ctl00_hidUserID').value + '/' + layerName + '_' + selectedSubMenu + '_borders.kml?v=' + document.getElementById('ctl00_hidVersion').value,
-    var layer = new google.maps.KmlLayer('http://havocnet.wreakhavoc.co.uk/Summits/KML/1/Counties.kml?v=20',
+    var layer = new google.maps.KmlLayer('http://havocnet.wreakhavoc.co.uk/Summits/KML/' + document.getElementById('ctl00_hidUserID').value + '/' + layerName + '_' + selectedSubMenu + '_borders.kml?v=' + document.getElementById('ctl00_hidVersion').value,
+    //var layer = new google.maps.KmlLayer('http://havocnet.wreakhavoc.co.uk/Summits/KML/1/Counties.kml?v=20',
     {
         streetViewControl: false,
         suppressInfoWindows: false,
