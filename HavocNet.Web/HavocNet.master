@@ -49,6 +49,9 @@
                         <li runat="server" id="cmdMainFinancials" visible="false">
                             <asp:HyperLink NavigateUrl="MainFinancials.aspx" runat="server">Financials</asp:HyperLink>
                         </li>
+                        <li runat="server" id="cmdMainChecklist" visible="false">
+                            <asp:HyperLink NavigateUrl="MainChecklist.aspx" runat="server">Checklist</asp:HyperLink>
+                        </li>
                         <li runat="server" id="cmdMainAdministration" visible="false">
                             <asp:HyperLink NavigateUrl="MainAdministration.aspx" runat="server">Administration</asp:HyperLink>
                         </li>

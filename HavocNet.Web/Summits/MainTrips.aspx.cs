@@ -12,6 +12,9 @@ namespace HavocNet.Web
             if (_myMaster == null) return;
             _myMaster.LoadPage("MainTrips");
 
+            //Bind Menus
+
+
             LoadPage();
         }
 
